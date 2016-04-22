@@ -6,7 +6,7 @@ import org.apache.spark.SparkContext
 object Wordcount {
   def main(args: Array[String]) = {
     val conf = new SparkConf()
-    .setAppName("WC")
+    .setAppName("WordCount")
     .setMaster("local")
     val sc = new SparkContext(conf)
     val test = sc.textFile("input.txt")
